@@ -46,7 +46,7 @@ const calcBtn = document.querySelector("#calc-btn");
 const clearBtn = document.querySelector("#clear-btn");
 
 const calcContainer = document.querySelector("#calc-container");
-const resultContainer = document.querySelector("#resul-container");
+const resultContainer = document.querySelector("#result-container");
 
 const imcNumber = document.querySelector("#imc-number span");
 const imcInfo = document.querySelector("#imc-info span");
@@ -80,7 +80,7 @@ function validDigits(text) {
     return text.replace(/[^0-9,]/g, "");
 }
 
-function calImc(height, weight) {
+function calcImc(height, weight) {
     const imc = (weight / (height * height)).toFixed(1);
     return imc;
 }
@@ -94,7 +94,7 @@ function cleanInputs() {
 
 function showOrHideResults() {
     calcContainer.classList.toggle("hide");
-    resultContainer.classList.toggle.toggle("hide");
+    resultContainer.classList.toggle("hide");
 }
 
 // List 
@@ -115,11 +115,10 @@ calcBtn.addEventListener("click", (e) => {
     const weight = +weightInput.value.replace(",", ".");
     const height = +heightInput.value.replace(",", ".");
 
-    console.log(weight, height);
-
+   
     if (!weight || !height) return;
 
-    const imc = calcImc(height, weight);
+    const imc = calcImc(weight, height);
     let info;
 
     data.forEach((item) => {
