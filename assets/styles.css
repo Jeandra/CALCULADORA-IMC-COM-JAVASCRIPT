@@ -54,6 +54,8 @@ body {
 .form-control input {
     padding: 1rem 0.5rem;
     border-radius: 10px;
+    border: none;
+    outline: 0;
 }
 
 .action-control {
@@ -66,7 +68,7 @@ body {
 button {
     text-transform: uppercase;
     padding: 1rem 1.5rem;
-    background-color: blue;
+    background-color: #6d00cb;
     border: none;
     color: #fff;
     font-weight: 600;
