@@ -11,6 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hide {
@@ -22,6 +23,7 @@ body {
     min-height: 400px;
     background-color: #1d1e33;
     padding: 2rem;
+    border-radius: 20px;
 }
 
 /* IMC Form */
@@ -51,6 +53,7 @@ body {
 
 .form-control input {
     padding: 1rem 0.5rem;
+    border-radius: 10px;
 }
 
 .action-control {
@@ -70,6 +73,7 @@ button {
     cursor: pointer;
     opacity: 0.9;
     flex: 1;
+    border-radius: 10px;
 }
 
 button:hover {
